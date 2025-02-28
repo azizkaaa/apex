@@ -1,0 +1,159 @@
+
+
+.header {
+  background-color: #FF6A00;
+  padding: 52px 157px;
+  position: fixed;
+  z-index: 10000;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 56px;
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  gap: 50px;
+}
+
+.navbar {
+  color: white;
+  font-family: "TT Interphases";
+  font-size: 19px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar:hover {
+  color: #101820;
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 34px;
+  height: 4px;
+  background-color: white;
+  margin: 5px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+
+@media (max-width: 920px) {
+
+  .head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav {
+    position: absolute;
+    top: -150vh;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #FF6A00;
+    padding: 20px 150px;
+    text-align: start;
+    flex-direction: column;
+    gap: 20px;
+    transition: top 0.4s ease-in-out, opacity 0.4s ease-in-out;
+    opacity: 0;
+    padding-top: 107px;
+  }
+  .navbar{
+    font-size: 60px;
+    line-height:77px;
+    
+  }
+
+  .navOpen {
+
+    top: 150px;
+    opacity: 1;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .burgerOpen div:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .burgerOpen div:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burgerOpen div:nth-child(3) {
+    transform: translateY(-19px) rotate(-45deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 52px 87px;
+  }
+
+  .nav{
+    padding: 20px 100px;
+    padding-top: 107px;
+  }
+
+  .navbar{
+    font-size: 52px;
+    line-height:77px;
+    
+  }
+
+}
+
+@media (max-width: 440px) {
+  .header {
+    padding: 52px 50px;
+    height: 119px;
+  }
+
+  .logo {
+    width: 51px;
+    height: 34px;
+  }
+
+  .navOpen {
+    top: 118px;
+  }
+
+  .nav{
+    padding: 20px 50px;
+    padding-top: 87px;
+    display: flex;
+    gap: 49px;
+  }
+
+  
+  
+  .navbar{
+    font-size: 32px;
+    line-height:27px;
+    
+  }
+
+
+
+
+
+}
