@@ -70,5 +70,23 @@ height: 50px;
     font-size: 48px;
     line-height: 46px;
    }
+
+}
+
+
+   @media (min-width: 2000px) {
+   
+.title{
+    margin-top: 250px;
+    font-size: 130px;
+    line-height: 130px;
+  }
+
+  .logo {
+    margin-top: 250px;
+    width: 350px;
+    height: 90px;
+  }
+   
    
    }

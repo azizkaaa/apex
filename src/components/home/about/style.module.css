@@ -38,7 +38,7 @@
 }
 
 .second{
-    margin-top: 46px;
+    margin-top: 30px;
     color: #FFF;
 font-family: "Stapel7";
 font-size: 28px;
@@ -48,7 +48,7 @@ line-height: 34px;
 }
 
 .third{
-    margin-top: 20px;
+    margin-top: 17px;
     color: #FFF;
 font-family: "Stapel7";
 font-size: 28px;
@@ -58,7 +58,7 @@ line-height: 34px;
 }
 
 .forth{
-    margin-top: 20px;
+    margin-top: 17px;
     color: #FFF;
 font-family: "Stapel7";
 font-size: 28px;
@@ -135,6 +135,7 @@ line-height: 34px;
     }
 
     .aboutContent {
+        
         margin-left: 0; 
         width: 100%; 
        
@@ -207,6 +208,52 @@ line-height: 34px;
 
 
   
-  
+@media (min-width: 2000px) {
+
+    .aboutContent{
+        max-width: 850px;
+        line-height:80px;
+      
+    }
+
+    .first{
+    
+        font-size: 38px;
+        line-height:10px;
+      
+    }
+    
+    .highlight {
+      
+        font-size: 37px;
+        line-height:80px;
+    }
+    
+    .second{
+
+    font-size: 37px;
+    line-height:44px;
+ 
+    }
+    
+    .third{
+
+    font-size: 37px;
+    line-height:44px;
+   
+    }
+    
+    .forth{
+
+        font-size: 37px;
+        line-height:44px;
+    }
+
+    .aboutContent{
+        margin-left: 289px;
+    }
+
+ 
+}
 
   

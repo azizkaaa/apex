@@ -7,7 +7,7 @@ const About = () => {
   return (
     <section  className={styles.about}>
       <div className={styles.aboutContent}>
-        <h1 id="first" className={styles.first}>
+        <h1 id="about" className={styles.first}>
           История Apex Development началась 
           <strong>
             с амбициозной идеи: превратить{" "}
