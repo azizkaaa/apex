@@ -8,9 +8,9 @@ const About = () => {
     <section  className={styles.about}>
       <div className={styles.aboutContent}>
         <h1 id="about" className={styles.first}>
-          История Apex Development началась 
+          История Apex Development началась с
           <strong>
-            с амбициозной идеи: превратить{" "}
+            {" "}амбициозной идеи: превратить{" "}
             <span className={styles.highlight}>15 лет опыта</span> <br />
             в нечто большее, чем просто строительство.
           </strong>

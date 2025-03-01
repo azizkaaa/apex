@@ -1,24 +1,26 @@
 .about {
     position: relative;
-    height: 100vh; 
     width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: white;
-    background-color: #101820; 
+    background-color: #101820;
     background-size: cover;
     background-position: center;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 .aboutContent {
-    max-width: 640px; 
+    max-width: 640px;
     width: 90%;
-    z-index: 2; 
+    z-index: 2;
+
     margin-left: 159px;
 }
-.first{
+
+.first {
     color: #FF6A00;
 
     font-family: "StapelB";
@@ -37,94 +39,98 @@
     line-height: 34px;
 }
 
-.second{
+.second {
     margin-top: 30px;
     color: #FFF;
-font-family: "Stapel7";
-font-size: 28px;
-font-style: normal;
-font-weight: 400;
-line-height: 34px;
+    font-family: "Stapel7";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
 }
 
-.third{
+.third {
     margin-top: 17px;
     color: #FFF;
-font-family: "Stapel7";
-font-size: 28px;
-font-style: normal;
-font-weight: 400;
-line-height: 34px;
+    font-family: "Stapel7";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
 }
 
-.forth{
+.forth {
     margin-top: 17px;
     color: #FFF;
-font-family: "Stapel7";
-font-size: 28px;
-font-style: normal;
-font-weight: 400;
-line-height: 34px;
+    font-family: "Stapel7";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
 }
+
 .aboutLetter {
     position: absolute;
-    right: -20px; 
+    right: -20px;
     top: 50%;
     transform: translateY(-50%);
     width: 640;
-    height: 440; 
-    z-index: 1; 
+    height: 440;
+    z-index: 1;
 }
+
 .aboutLetterMobile {
     display: none;
     width: 640;
-    height: 440; 
-  }
-  
+    height: 440;
+}
+
 
 
 @media (max-width: 1280px) {
+
+
     .aboutLetter {
         width: 635px;
         height: 435px;
-        right: -110px; 
+        right: -110px;
     }
 
-    .first{
-    
+    .first {
+
         font-size: 24px;
-        
+
         line-height: 30px;
     }
-    
+
     .highlight {
-      
-        font-size: 24px;
-        
-        line-height: 30px;
-    }
-    
-    .second{
-
-    font-size: 24px;
-  
-    line-height: 30px;
-    }
-    
-    .third{
-
-    font-size: 24px;
-
-    line-height: 30px;
-    }
-    
-    .forth{
 
         font-size: 24px;
 
         line-height: 30px;
     }
-    
+
+    .second {
+
+        font-size: 24px;
+
+        line-height: 30px;
+    }
+
+    .third {
+
+        font-size: 24px;
+
+        line-height: 30px;
+    }
+
+    .forth {
+
+        font-size: 24px;
+
+        line-height: 30px;
+    }
+
 }
 
 @media (max-width: 1090px) {
@@ -135,125 +141,134 @@ line-height: 34px;
     }
 
     .aboutContent {
-        
-        margin-left: 0; 
-        width: 100%; 
-       
+
+        margin-left: 0;
+        width: 100%;
+
     }
 
     .aboutLetter {
         margin-top: 70px;
         position: static;
-        transform: none; 
+        transform: none;
     }
 
     .aboutLetterDesktop {
-        display: none; 
-      }
-      .aboutLetterMobile {
+        display: none;
+    }
+
+    .aboutLetterMobile {
         display: block;
-      }
+    }
 }
 
 
 @media (max-width: 440px) {
 
-    .aboutContent{
-        width: 293px;
-    
-      
+    .about {
+        height: 100%;
+
     }
+
+    .aboutContent {
+        width: 293px;
+        padding-top: 80px;
+
+    }
+
     .aboutLetter {
+
         width: 320px;
         height: 220px;
+        padding-bottom: 80px;
+
     }
 
-    .first{
-    
+    .first {
+
         font-size: 18px;
-        
+
         line-height: 120%;
     }
-    
+
     .highlight {
-      
+
         font-size: 17px;
-        
+
         line-height: 120%;
     }
-    
-    .second{
 
-    font-size: 17px;
-  
-    line-height: 130%;
-    }
-    
-    .third{
-
-    font-size: 17px;
-
-    line-height: 130%;
-    }
-    
-    .forth{
+    .second {
 
         font-size: 17px;
 
-        line-height:130%;
+        line-height: 130%;
     }
 
- 
+    .third {
+
+        font-size: 17px;
+
+        line-height: 130%;
+    }
+
+    .forth {
+
+        font-size: 17px;
+
+        line-height: 130%;
+    }
+
+
 }
 
 
-  
+
 @media (min-width: 2000px) {
 
-    .aboutContent{
+
+    .aboutContent {
         max-width: 850px;
-        line-height:80px;
-      
+        line-height: 80px;
+
     }
 
-    .first{
-    
+    .first {
+
         font-size: 38px;
-        line-height:10px;
-      
+        line-height: 10px;
+
     }
-    
+
     .highlight {
-      
-        font-size: 37px;
-        line-height:80px;
-    }
-    
-    .second{
-
-    font-size: 37px;
-    line-height:44px;
- 
-    }
-    
-    .third{
-
-    font-size: 37px;
-    line-height:44px;
-   
-    }
-    
-    .forth{
 
         font-size: 37px;
-        line-height:44px;
+        line-height: 80px;
     }
 
-    .aboutContent{
+    .second {
+
+        font-size: 37px;
+        line-height: 44px;
+
+    }
+
+    .third {
+
+        font-size: 37px;
+        line-height: 44px;
+
+    }
+
+    .forth {
+
+        font-size: 37px;
+        line-height: 44px;
+    }
+
+    .aboutContent {
         margin-left: 289px;
     }
 
- 
-}
 
-  
+}
