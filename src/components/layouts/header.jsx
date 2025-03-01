@@ -13,7 +13,7 @@ const Header = () => {
 
         <nav className={`${styles.nav} ${menuOpen ? styles.navOpen : ""}`}>
           <a href="#about" className={styles.navbar} onClick={() => setMenuOpen(false)}>О компании</a>
-          <a href="#projects" className={styles.navbar} onClick={() => setMenuOpen(false)}>Ценности бренда</a>
+          <a href="#values" className={styles.navbar} onClick={() => setMenuOpen(false)}>Ценности бренда</a>
           <a href="#contact" className={styles.navbar} onClick={() => setMenuOpen(false)}>Контакты</a>
         </nav>
 

@@ -138,12 +138,14 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
+        
     }
 
     .aboutContent {
 
         margin-left: 0;
-        width: 100%;
+        width: 600px;
+        padding-top: 80px;
 
     }
 
@@ -151,6 +153,7 @@
         margin-top: 70px;
         position: static;
         transform: none;
+        padding-bottom: 80px;
     }
 
     .aboutLetterDesktop {
@@ -167,7 +170,7 @@
 
     .about {
         height: 100%;
-
+        padding-top: 20px;
     }
 
     .aboutContent {

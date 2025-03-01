@@ -1,10 +1,24 @@
-import Image from "next/image";
+
 import styles from "./values.module.css"
 
 
 const Values = () => {
     return (
-        <section></section>
+        <section id="values" className={styles.values}>
+             <div className={styles.image_container}></div>
+        <div className={styles.stext_container}>
+        <h1>Наши ценности</h1>
+
+        <h2>Качество, надежность, <br className={styles.br}/> безопасность</h2>
+        <p>Строим долговечно, используя лучшие материалы и технологии.</p>
+
+        <h2>Ориентированность <br className={styles.br}/> на клиента</h2>
+        <p>Учитываем потребности клиентов, обеспечивая комфорт и безопасность.</p>
+
+        <h2>Инновации</h2>
+        <p>Внедряем передовые технологии в строительный процесс, повышая ценность объектов.</p>
+    </div>
+        </section>
     );
 
     

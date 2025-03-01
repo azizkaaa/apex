@@ -1,0 +1,123 @@
+.values {
+    display: flex;
+    height: 100vh; /* Высота на весь экран */
+}
+
+.image_container {
+    width: 50%;
+    background: url('../../../assets/half.png') no-repeat center center/cover;
+}
+
+
+.stext_container {
+    width: 653px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Центрируем текст по вертикали */
+    padding: 120px;
+    
+    color: white; /* Белый текст по умолчанию */
+}
+
+.stext_container h1 {
+    font-family: "StapelB";
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 28px;
+    color: #FF6A00;;
+   
+    margin-bottom: 30px;
+}
+
+.stext_container h2 {
+    color: #FF6A00;
+    font-family: "Stapel5";
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 28px;
+  
+   
+}
+
+.stext_container p {
+    font-family: "Stapel5";
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #000; /* Обычный текст белый */
+    margin-bottom: 25px;
+}
+
+
+@media (max-width: 440px) {
+    .values {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .image_container {
+        width: 100%;
+        height: 50vh; /* Фиксированная высота для изображения */
+    }
+
+    .stext_container {
+        width: 282px;
+        padding: 0;
+        margin: 50px;
+        margin-left: 80px;
+      
+        
+    }
+
+    .stext_container h1 {
+    
+        line-height: 36px;
+        font-size: 28px;
+      
+    }
+    
+    .stext_container h2 {
+        font-size: 15px;
+        line-height: 130%;
+        
+      
+       
+    }
+    
+    .stext_container p {
+        font-size: 15px;
+        line-height: 130%;
+    }
+  .br{
+    display: active;
+  }
+    
+}
+
+
+
+@media (max-width: 390px){
+    .stext_container {
+       
+        margin-left: 50px;
+      
+        
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 441px){
+.br{
+    display: none;
+}
+}

@@ -5,9 +5,9 @@ import A_small from "@/assets/ad.svg";
 
 const About = () => {
   return (
-    <section  className={styles.about}>
+    <section id="about" className={styles.about}>
       <div className={styles.aboutContent}>
-        <h1 id="about" className={styles.first}>
+        <h1  className={styles.first}>
           История Apex Development началась с
           <strong>
             {" "}амбициозной идеи: превратить{" "}

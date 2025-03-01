@@ -124,8 +124,8 @@
 
 @media (max-width: 440px) {
   .header {
-    padding: 52px 50px;
-    height: 119px;
+    padding: 35px 30px;
+    height: 69px;
   }
 
   .logo {
@@ -134,7 +134,8 @@
   }
 
   .navOpen {
-    top: 118px;
+    top: 70px;
+   
   }
 
   .nav{
@@ -151,7 +152,6 @@
     line-height:27px;
     
   }
-
 
 
 
