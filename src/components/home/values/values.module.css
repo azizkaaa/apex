@@ -64,7 +64,7 @@
         width: 282px;
         padding: 0;
         margin: 50px;
-        margin-left: 80px;
+        margin-left: 60px;
       
         
     }
@@ -99,7 +99,7 @@
 @media (max-width: 390px){
     .stext_container {
        
-        margin-left: 50px;
+        margin-left: 10px;
       
         
     }
