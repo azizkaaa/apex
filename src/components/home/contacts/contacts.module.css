@@ -1,0 +1,193 @@
+.container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh; /* вместо height: 100vh */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #D9D9D9;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    padding-bottom: 60px;
+}
+
+.logo {
+    margin-top: 158px;
+    width: 220px;
+    margin-bottom: 99px;
+}
+
+.formWrapper {
+    width: 754px;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.tit {
+    color: #FF6A00;
+    text-align: center;
+    font-family: "Stapel5";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 38px;
+    margin-top: 20px;
+}
+
+.form {
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.input {
+    padding: 13px 17px 13px 17px;
+    border: 1px solid #FF6A00;
+    border-radius: 8px;
+    width: 221px;
+    background-color: #fff;
+    color: black;
+}
+
+.input:focus {
+    border-color: #FF6A00; /* Меняем цвет границы */
+    box-shadow: 0 0 5px rgba(255, 102, 0, 0.7); /* Добавляем легкое свечение */
+    outline: none;
+}
+.input::placeholder {
+    color: #B6B6B6;
+    font-family: "TT Interphases";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px;
+   
+}
+
+.button {
+    background: #FF6A00;
+    color: white;
+    padding: 13px 17px 13px 17px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 221px;
+    font-family: "Stapel5";
+    font-size: 18px;
+    font-weight: 600
+}
+
+.social{
+    margin-top: 120px;
+    color: #939393;
+    font-family: "TT Interphases";
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 38px;
+}
+
+
+
+.socials {
+    display: flex;
+    gap: 19px;
+    margin-top: 30px;
+}
+
+.socials a {
+    display: inline-block;
+}
+
+.socials img {
+    width: 38px;
+    height: 39px;
+}
+
+.copyright {
+    margin-top: auto;
+    color: #939393;
+    text-align: center;
+    font-family: "TT Interphases";
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 38px;
+}
+
+
+@media (max-width: 440px) {
+   
+    .logo {
+        margin-top: 129px;
+        width: 170px;
+        height: 51px;
+        margin-bottom: 57px;
+    }
+
+
+    .formWrapper {
+        width: 322px;
+        height: 450px;
+        border-radius: 15px;
+    }
+
+    .tit {
+        color: #FF6A00;
+        font-family: "Stapel5";
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 110%;
+    }
+
+    .form {
+        margin-top: 42px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .input{
+        width: 293px;
+        padding: 16px 17px 15px 17px;
+    }
+    .button{
+        width: 293px;
+    }
+    .social{
+        margin-top: 53px;
+        font-size: 19px;
+    }
+
+    .socials {
+        margin-top: 15px;
+        gap: 16px;
+    }
+    .socials img {
+        width: 32px;
+        height: 33px;
+    }
+    .copyright {
+        margin-top: 75px;       
+        text-align: center;
+        font-size: 11px;
+        line-height: 15px;
+    }
+
+    .container{
+        padding-bottom: 40px;
+    }
+
+}
+
+@media (min-width: 441px) {
+    .brr{
+        display: none;
+    }
+
+   
+}

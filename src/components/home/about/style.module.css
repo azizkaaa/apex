@@ -1,7 +1,7 @@
 .about {
     position: relative;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh; /* Изменено с height на min-height */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,6 +10,7 @@
     background-size: cover;
     background-position: center;
     overflow: hidden;
+    padding-bottom: 50px; /* Добавлен padding-bottom */
 }
 
 .aboutContent {
@@ -168,9 +169,10 @@
 
 @media (max-width: 440px) {
 
-    .about {
-        height: 100%;
+   .about {
+        height: auto; /* Изменено с 100% на auto */
         padding-top: 20px;
+        padding-bottom: 60px; /* Добавлен отступ */
     }
 
     .aboutContent {
@@ -184,7 +186,7 @@
         width: 520px;
         height: 300px;
         padding-bottom: 80px;
-        margin-top: 40x;
+        margin-top: 60px;
     }
 
     .first {
@@ -226,6 +228,11 @@
 }
 
 
+@media (min-width: 2000px) {
+.brr{
+    display: none;
+}
+}
 
 @media (min-width: 2000px) {
 
