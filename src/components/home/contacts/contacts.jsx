@@ -37,7 +37,7 @@ function Contacts() {
     };
 
     return (
-        <section id="contacts" className={styles.container}>
+        <section id="contactss" className={styles.container}>
   
             <Image src={Logo} alt="Logo" width={220} height={66} className={styles.logo} />
 
