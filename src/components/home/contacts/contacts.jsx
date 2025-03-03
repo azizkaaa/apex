@@ -19,7 +19,17 @@ function Contacts() {
             return;
         }
 
-        const botToken = "7631087313:AAGPRl6_HVr_KaLInNUvrSjkv5ZOyOLm0Is";
+        if (name.length > 20) {
+            alert("Имя не должно превышать 20 символов");
+            return;
+        }
+
+        if (phone.length !== 13) {
+            alert("Номер не должен превышать 13 символов");
+            return;
+        }
+
+        const botToken = "7150075831:AAHqZQLttMVywI8N_uStev59LpU9mNl1uk8";
         const chatId = "-1002350005179";
         const message = `Новая заявка!\nИмя: ${name}\nТелефон: ${phone}`;
 
@@ -29,6 +39,46 @@ function Contacts() {
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ chat_id: chatId, text: message }),
             });
+        } catch (error) {
+            console.error("Ошибка при отправке в Telegram:", error);
+        }
+
+        const scriptURL = "https://script.google.com/macros/s/AKfycbyOfa1SCPphv4P4Ee9TDqQfPtv5LLRx0o69ZVL6zJ52uWCu3BkuR4g8M1qpRw1bvKgH/exec";
+
+        try {
+            await fetch(scriptURL, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ name, phone }),
+                mode: "no-cors"
+            });
+        } catch (error) {
+            console.error("Ошибка при отправке в Google Sheets:", error);
+        }
+
+        setName("");
+        setPhone("");
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        if (!name || !phone) {
+            alert("Пожалуйста, заполните все поля");
+            return;
+        }
+
+        if (name.length > 20) {
+            alert("Имя не должно превышать 20 символов");
+            return;
+        }
+
+        if (phone.length > 13) {
+            alert("Телефон должен содержать 13 символов");
+            return;
+        }
+
+        try {
             const response = await fetch("/api/google-sheets", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
@@ -36,22 +86,17 @@ function Contacts() {
             });
 
             const data = await response.json();
+            console.log("Ответ от сервера:", data);
 
-            if (!response.ok || data.error) {
-                console.error("Ошибка при отправке:", data.error);
-                return;
+            if (data.error) {
+                alert("Ошибка: " + data.error);
             }
-            setName("");
-            setPhone("");
-
         } catch (error) {
-            console.error("Ошибка при отправке:", error);
+            console.error("Ошибка при отправке формы:", error);
         }
-    };
 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        sendToTelegramAndSheets();
+        setName("");
+        setPhone("");
     };
 
     return (
@@ -102,3 +147,4 @@ function Contacts() {
 }
 
 export default Contacts;
+
