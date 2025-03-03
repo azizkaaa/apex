@@ -24,7 +24,7 @@ function Contacts() {
             return;
         }
 
-        if (phone.length !== 13) {
+        if (phone.length > 13) {
             alert("Номер не должен превышать 13 символов");
             return;
         }
@@ -77,6 +77,9 @@ function Contacts() {
             alert("Телефон должен содержать 13 символов");
             return;
         }
+
+        await sendToTelegramAndSheets();
+
 
         try {
             const response = await fetch("/api/google-sheets", {
