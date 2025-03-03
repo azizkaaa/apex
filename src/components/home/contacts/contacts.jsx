@@ -91,9 +91,7 @@ function Contacts() {
             const data = await response.json();
             console.log("Ответ от сервера:", data);
 
-            if (data.error) {
-                alert("Ошибка: " + data.error);
-            }
+          
         } catch (error) {
             console.error("Ошибка при отправке формы:", error);
         }
