@@ -13,7 +13,7 @@ function Contacts() {
     const [name, setName] = useState("");
     const [phone, setPhone] = useState("");
 
-    const sendToTelegram = async () => {
+    const sendToTelegramAndSheets = async () => {
         if (!name || !phone) {
             alert("Пожалуйста, заполните все поля");
             return;
@@ -21,29 +21,46 @@ function Contacts() {
 
         const botToken = "7631087313:AAGPRl6_HVr_KaLInNUvrSjkv5ZOyOLm0Is";
         const chatId = "-1002350005179";
-        const message = `Новая заявка !\nИмя: ${name}\nТелефон: ${phone}`;
+        const message = `Новая заявка!\nИмя: ${name}\nТелефон: ${phone}`;
 
-        await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-                chat_id: chatId,
-                text: message,
-            }),
-        });
+        try {
+            await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ chat_id: chatId, text: message }),
+            });
+            const response = await fetch("/api/google-sheets", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ name, phone }),
+            });
 
-        setName("");
-        setPhone("");
+            const data = await response.json();
+
+            if (!response.ok || data.error) {
+                console.error("Ошибка при отправке:", data.error);
+                return;
+            }
+            setName("");
+            setPhone("");
+
+        } catch (error) {
+            console.error("Ошибка при отправке:", error);
+        }
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        sendToTelegramAndSheets();
     };
 
     return (
         <section id="contactss" className={styles.container}>
-  
             <Image src={Logo} alt="Logo" width={220} height={66} className={styles.logo} />
 
             <div className={styles.formWrapper}>
                 <h2 className={styles.tit}>Оставьте заявку <br className={styles.brr}/> и вы узнаете <br /> о старте продаж первым</h2>
-                <div className={styles.form}>
+                <form className={styles.form} onSubmit={handleSubmit}>
                     <input className={styles.input}
                         type="tel"
                         placeholder="Номер"
@@ -56,9 +73,8 @@ function Contacts() {
                         value={name}
                         onChange={(e) => setName(e.target.value)}
                     />
-                    
-                    <button className={styles.button} onClick={sendToTelegram}>Оставить заявку</button>
-                </div>
+                    <button className={styles.button} type="submit">Оставить заявку</button>
+                </form>
             </div>
 
             <p className={styles.social}>Следите за нами в соцсетях</p>
