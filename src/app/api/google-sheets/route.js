@@ -20,12 +20,24 @@ export async function POST(req) {
         const sheets = google.sheets({ version: "v4", auth });
         const spreadsheetId = process.env.GOOGLE_SHEET_ID;
 
+        
+        const now = new Date();
+        const tashkentOffset = 5 * 60 * 60 * 1000; 
+        const tashkentTime = new Date(now.getTime() + tashkentOffset);
+
+        const formattedTime = tashkentTime.getFullYear() + "-" +
+                              ("0" + (tashkentTime.getMonth() + 1)).slice(-2) + "-" +
+                              ("0" + tashkentTime.getDate()).slice(-2) + " " +
+                              ("0" + tashkentTime.getHours()).slice(-2) + ":" +
+                              ("0" + tashkentTime.getMinutes()).slice(-2) + ":" +
+                              ("0" + tashkentTime.getSeconds()).slice(-2);
+
         await sheets.spreadsheets.values.append({
             spreadsheetId,
             range: "Apex!A:C",
             valueInputOption: "RAW",
             requestBody: {
-                values: [[name, phone, new Date().toISOString()]],
+                values: [[name, phone, formattedTime]], // Вставляем исправленное время
             },
         });
 
