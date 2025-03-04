@@ -74,18 +74,18 @@
 }
 
 
-   @media (min-width: 2000px) {
+   @media (min-width: 3800px) {
    
 .title{
-    margin-top: 250px;
-    font-size: 130px;
-    line-height: 130px;
+    margin-top: 553px;
+    font-size: 234px;
+    line-height: 243px;
   }
 
   .logo {
-    margin-top: 250px;
-    width: 350px;
-    height: 90px;
+    margin-top: 380px;
+    width: 634px;
+    height: 191px;
   }
    
    

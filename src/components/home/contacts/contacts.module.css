@@ -54,8 +54,8 @@
 }
 
 .input:focus {
-    border-color: #FF6A00; /* Меняем цвет границы */
-    box-shadow: 0 0 5px rgba(255, 102, 0, 0.7); /* Добавляем легкое свечение */
+    border-color: #FF6A00; 
+    box-shadow: 0 0 5px rgba(255, 102, 0, 0.7); 
     outline: none;
 }
 .input::placeholder {
@@ -192,3 +192,81 @@
 
    
 }
+
+@media (min-width: 3800px) {
+    
+      .logo {
+        margin-top: 401px;
+        width: 560px;
+        height: 189px;
+        margin-bottom: 252px;
+      }
+
+      .formWrapper {
+
+        width: 1914px;
+        padding: 70px;
+        border-radius: 38px;
+    }
+       
+    .tit{
+        font-size: 91px;
+        line-height: 96px;
+    }
+
+    .form {
+        margin-top: 95px;
+        gap: 55px;
+    }
+    
+    .input {
+        padding: 33px 43px 33px 43px;
+        border: 2.54px solid #FF6A00;
+        border-radius: 20px;
+        width: 561px;
+        font-size: 45px;
+    }
+
+    .input::placeholder {
+        font-size: 45px;
+        line-height: 96px;
+       
+    }
+
+    .button {
+        padding: 27px 43px 30px 43px;
+        border-radius: 20px;
+        width: 561px;
+        font-size: 45px;
+    }
+
+
+    .social{
+        margin-top: 304px;
+        font-size: 60px;
+        line-height: 96px;
+    }
+    
+    
+    .socials {
+        display: flex;
+        gap: 48px;
+        margin-top: 76px;
+    }
+    
+    .socials img {
+        width: 96px;
+        height: 99px;
+    }
+    
+    .copyright {
+        font-size: 38px;
+        line-height: 96px;
+    }
+
+    .container {
+        padding-bottom: 152px;
+    }
+    
+       
+       }

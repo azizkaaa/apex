@@ -44,6 +44,10 @@
     margin-bottom: 25px;
 }
 
+.brr{
+    display: none;
+}
+
 @media (max-width: 768px) {
     .values {
         flex-direction: column;
@@ -90,10 +94,39 @@
 
 
 
+@media (min-width: 3800px) {
+  
 
 
+        .stext_container h1 {
+            font-size: 81px;
+            line-height: 71px;
+            margin-bottom: 70px;
+        }
+        
+        .stext_container h2 {
+            font-size: 55px;
+            line-height: 71px;
+        }
+        
+        .stext_container p {
+            font-size: 55px;
+            line-height: 71px;
+            margin-bottom: 70px;
 
+    }
 
+          .stext_container {
+            width: 1035px;
+            padding: 0px;
+            margin-left: 305px;
+        }
+
+        .br{
+            display: none;
+        }
+
+    };
 
 
 

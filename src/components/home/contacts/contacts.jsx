@@ -102,7 +102,7 @@ function Contacts() {
 
     return (
         <section id="contactss" className={styles.container}>
-            <Image src={Logo} alt="Logo" width={220} height={66} className={styles.logo} />
+            <Image src={Logo} alt="Logo" width={560} height={189} className={styles.logo} />
 
             <div className={styles.formWrapper}>
                 <h2 className={styles.tit}>Оставьте заявку <br className={styles.brr}/> и вы узнаете <br /> о старте продаж первым</h2>

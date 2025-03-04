@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./style.module.css";
+import A_Big from "@/assets/bigA.svg"; 
 import A from "@/assets/letter.svg"; 
 import A_small from "@/assets/ad.svg"; 
 
@@ -29,7 +30,7 @@ const About = () => {
         </p>
       </div>
 
-    
+      <Image src={A_Big} alt="A" className={`${styles.aboutLetter} ${styles.aboutBig}`} />
       <Image src={A} alt="A" className={`${styles.aboutLetter} ${styles.aboutLetterDesktop}`} />
       <Image src={A_small} alt="A" width={320} height={220} className={`${styles.aboutLetter} ${styles.aboutLetterMobile}`} />
     </section>

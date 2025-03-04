@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.head}>
-        <Image src={Logo} width={66} height={45} alt="Лого" className={styles.logo} />
+        <Image src={Logo} width={70} height={60} alt="Лого" className={styles.logo} />
 
         <nav className={`${styles.nav} ${menuOpen ? styles.navOpen : ""}`}>
           <a href="#about" className={styles.navbar} onClick={() => setMenuOpen(false)}>О компании</a>

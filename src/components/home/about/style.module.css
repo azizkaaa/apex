@@ -23,7 +23,6 @@
 
 .first {
     color: #FF6A00;
-
     font-family: "StapelB";
     font-size: 28px;
     font-style: normal;
@@ -85,6 +84,13 @@
     width: 640;
     height: 440;
 }
+
+.aboutBig {
+    display: none;
+    width: 2417px;
+    height: 1655px;
+}
+
 
 
 
@@ -170,9 +176,9 @@
 @media (max-width: 440px) {
 
    .about {
-        height: auto; /* Изменено с 100% на auto */
+        height: auto;
         padding-top: 20px;
-        padding-bottom: 60px; /* Добавлен отступ */
+        padding-bottom: 60px; 
     }
 
     .aboutContent {
@@ -280,5 +286,61 @@
         margin-left: 289px;
     }
 
+
+}
+
+
+@media (min-width: 3800px) {
+
+
+    .aboutContent {
+        max-width: 1625px;
+        margin-left: 403px;
+
+    }
+
+    .first {
+
+        font-size: 71px;
+        line-height: 86px;
+
+    }
+
+    .highlight {
+
+        font-size: 71px;
+        line-height: 86px;
+    }
+
+    .second {
+        margin-top: 80px;
+        font-size: 71px;
+        line-height: 86px;
+
+    }
+
+    .third {
+        margin-top: 44px;
+        font-size: 71px;
+        line-height: 86px;
+
+    }
+
+    .forth {
+        margin-top: 44px;
+        font-size: 71px;
+        line-height: 86px;
+    }
+    .aboutLetterDesktop{
+        display: none;
+    }
+
+    .aboutBig {
+        display: block;
+    }
+
+    .aboutLetter {
+        right: -400px;
+    }
 
 }
