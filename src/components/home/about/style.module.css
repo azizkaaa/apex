@@ -91,11 +91,18 @@
     height: 1655px;
 }
 
+.brr{
+    display:none;
+}
+
 
 
 
 @media (max-width: 1280px) {
 
+    .aboutContent {
+        max-width: 540px;
+    }
 
     .aboutLetter {
         width: 635px;
@@ -137,7 +144,7 @@
 
         line-height: 30px;
     }
-
+ 
 }
 
 @media (max-width: 1090px) {
@@ -230,14 +237,16 @@
         line-height: 130%;
     }
 
+    .brr{
+        display: block;
+    }
+
 
 }
 
 
 @media (min-width: 2000px) {
-.brr{
-    display: none;
-}
+
 }
 
 @media (min-width: 2000px) {

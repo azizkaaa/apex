@@ -1,7 +1,6 @@
 .values {
     display: flex;
     min-height: 100vh;
-    flex-wrap: wrap;
     background-color: white;
 }
 
@@ -11,14 +10,17 @@
 }
 
 .stext_container {
-    width: 653px;
+    width: 653px; /* 📌 Фиксированная ширина, чтобы сохранить переносы */
+    max-width: 653px; /* 📌 Не позволяет растягиваться на больших экранах */
+    min-width: 653px; /* 📌 Не позволяет сужаться, чтобы текст не сжимался */
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 120px;
     color: white;
+    overflow-wrap: break-word; /* 📌 Гарантирует переносы по изначальному формату */
+    white-space: pre-wrap; /* 📌 Сохраняет твои ручные переносы строк */
 }
-
 .stext_container h1 {
     font-family: "StapelB";
     font-size: 32px;
@@ -68,7 +70,8 @@
 
 @media (max-width: 430px) {
     .stext_container {
-        width: 75%;
+        width: 340px;
+        min-width: 340px;
         padding: 20px;
         margin: 40px auto 30px;
     }
@@ -92,6 +95,38 @@
     }
     }
 
+
+
+    @media (min-width: 2000px) {
+        .stext_container h1 {
+            font-size: 51px;
+            line-height: 34px;
+            margin-bottom: 50px;
+        }
+        
+        .stext_container h2 {
+            font-size: 25px;
+            line-height: 34px;
+        }
+        
+        .stext_container p {
+            font-size: 25px;
+            line-height: 34px;
+            margin-bottom: 30px;
+
+    }
+
+          .stext_container {
+            width: 550px;
+            min-width: 550px;
+            padding: 0px;
+            margin-left: 150px;
+        }
+        .br{
+            display: none;
+        }
+
+    }
 
 
 
@@ -119,6 +154,7 @@
 
           .stext_container {
             width: 1035px;
+            max-width: 1035px;
             padding: 0px;
             margin-left: 305px;
         }
@@ -127,7 +163,7 @@
             display: none;
         }
 
-    };
+    }
 
 
 

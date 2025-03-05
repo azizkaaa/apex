@@ -30,21 +30,19 @@ function Hero() {
 
         if (!currentVideo || !nextVideo) return;
 
-        // Сбрасываем второе видео на начало
-        nextVideo.currentTime = 0; 
-        nextVideo.play(); // Запускаем следующее видео
 
-        // Делаем плавный переход
+        nextVideo.currentTime = 0; 
+        nextVideo.play(); 
+
         nextVideo.style.transition = "opacity 0.5s ease-in-out"; 
-        nextVideo.style.opacity = "1"; // Сделать видимым
+        nextVideo.style.opacity = "1"; 
         setTimeout(() => {
-            currentVideo.style.opacity = "0"; // Скрыть текущее
+            currentVideo.style.opacity = "0"; 
         }, 500);
 
-        // После окончания видео переключаем флаг для направления
+       
         setPlayingForward((prev) => !prev);
 
-        // Возвращаем первое видео на начало, если мы вернулись к первому
         if (!playingForward) {
             videoRef1.current.currentTime = 0;
         }
