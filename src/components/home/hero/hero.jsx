@@ -7,7 +7,7 @@ function Hero() {
         <section className={styles.hero}>
            
             <video autoPlay loop muted playsInline className={styles.videoBackground}>
-                <source src="/assetss/bg.mp4" type="video/mp4" />
+                <source src="/assetss/secondv.mp4" type="video/mp4" />
                 Ваш браузер не поддерживает видео.
             </video>
 
