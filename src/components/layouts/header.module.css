@@ -53,7 +53,16 @@
 }
 
 
-@media (max-width: 920px) {
+@media (max-width: 1024px) {
+
+  .header {
+    height: 119px;
+    padding: 51px 106px;
+  }
+  .logo {
+    width: 51px;
+    height: 34px;
+  }
 
   .head{
     display: flex;
@@ -67,23 +76,23 @@
     width: 100%;
     height: 100vh;
     background-color: #FF6A00;
-    padding: 20px 150px;
+    padding: 20px 119px;
     text-align: start;
     flex-direction: column;
-    gap: 20px;
+    gap: 50px;
     transition: top 0.4s ease-in-out, opacity 0.4s ease-in-out;
     opacity: 0;
     padding-top: 107px;
   }
   .navbar{
-    font-size: 60px;
+    font-size: 55px;
     line-height:77px;
     
   }
 
   .navOpen {
 
-    top: 150px;
+    top: 118px;
     opacity: 1;
   }
 

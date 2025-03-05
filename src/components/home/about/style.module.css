@@ -1,7 +1,7 @@
 .about {
     position: relative;
     width: 100%;
-    min-height: 100vh; /* Изменено с height на min-height */
+    min-height: 100vh; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,7 +10,7 @@
     background-size: cover;
     background-position: center;
     overflow: hidden;
-    padding-bottom: 50px; /* Добавлен padding-bottom */
+    padding-bottom: 50px;
 }
 
 .aboutContent {
@@ -95,6 +95,14 @@
     display:none;
 }
 
+.brrr{
+    display:none;
+}
+
+.aboutLetterTablet {
+    display: none;
+}
+
 
 
 
@@ -147,36 +155,115 @@
  
 }
 
-@media (max-width: 1090px) {
+@media (max-width: 1030px) {
+    .b{
+        display: none
+        ;
+    }
+
+    .brrr{
+        display:block;
+    }
     .about {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        
         
     }
 
     .aboutContent {
 
         margin-left: 0;
-        width: 600px;
-        padding-top: 80px;
+        max-width: 520px;
+        padding-top: 0px;
+ 
 
     }
 
     .aboutLetter {
-        margin-top: 70px;
+        margin-top: 80px;
         position: static;
         transform: none;
-        padding-bottom: 80px;
+        padding-bottom: 0px;
+        width: 550px;
+        height: 370px;
     }
 
     .aboutLetterDesktop {
         display: none;
     }
 
-    .aboutLetterMobile {
+
+    .first {
+
+        font-size: 28px;
+
+        line-height: 34px;
+    }
+
+    .highlight {
+
+        font-size: 28px;
+
+        line-height: 34px;
+    }
+
+    .second {
+
+        font-size: 28px;
+
+        line-height: 34px;
+    }
+
+    .third {
+
+        font-size: 28px;
+
+        line-height: 34px;
+    }
+
+    .forth {
+
+        font-size: 28px;
+
+        line-height: 34px;
+    }
+
+    .aboutLetterTablet {
         display: block;
     }
+    
+}
+
+@media (max-width: 768px) {
+
+    .aboutContent {
+
+        margin-left: 0;
+        max-width: 520px;
+        padding-top: 110px;
+
+    }
+
+    .about {
+        padding-bottom: 100px;
+    }
+
+    .aboutLetterMobile {
+        display: none;
+    }
+
+    .aboutLetterTablet {
+        display: block;
+    }
+    .aboutLetter{
+        width: 452px;
+        height: 310px;
+    }
+
+
+
 }
 
 

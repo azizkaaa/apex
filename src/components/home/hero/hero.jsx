@@ -22,7 +22,7 @@ function Hero() {
             
             <div className={styles.content}>
                 <h1 className={styles.title}>
-                    Девелопер нового <br /> поколения
+                    Девелопер <br className={styles.br} /> нового <br /> поколения
                 </h1>
                 <Image src={Logo} width={250} height={75} alt="Лого" className={styles.logo} />
             </div>
