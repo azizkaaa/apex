@@ -2,6 +2,7 @@
     display: flex;
     min-height: 100vh;
     flex-wrap: wrap;
+    background-color: white;
 }
 
 .image_container {

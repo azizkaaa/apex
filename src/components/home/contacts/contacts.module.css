@@ -108,7 +108,7 @@
 }
 
 .copyright {
-    margin-top: auto;
+    margin-top: 109px;
     color: #939393;
     text-align: center;
     font-family: "TT Interphases";
@@ -260,6 +260,7 @@
     }
     
     .copyright {
+        margin-top: 276px;
         font-size: 38px;
         line-height: 96px;
     }

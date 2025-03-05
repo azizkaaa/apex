@@ -125,19 +125,19 @@ function Contacts() {
 
             <p className={styles.social}>Следите за нами в соцсетях</p>
             <div className={styles.socials}>
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://facebook.com/apexdevelopment.uz" target="_blank" rel="noopener noreferrer">
                     <Image src={Facebook} alt="Facebook" width={38} height={39} />
                 </a>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://instagram.com/apex.development" target="_blank" rel="noopener noreferrer">
                     <Image src={Instagram} alt="Instagram" width={38} height={39} />
                 </a>
-                <a href="https://t.me" target="_blank" rel="noopener noreferrer">
+                <a href="https://t.me/apex_development" target="_blank" rel="noopener noreferrer">
                     <Image src={Telegram} alt="Telegram" width={38} height={39} />
                 </a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://linkedin.com/company/apex-development-uz" target="_blank" rel="noopener noreferrer">
                     <Image src={Linkedin} alt="LinkedIn" width={38} height={39} />
                 </a>
-                <a href="mailto:yourmail@example.com">
+                <a href="mailto:info@apexdev.uz">
                     <Image src={Email} alt="Email" width={38} height={39} />
                 </a>
             </div>
