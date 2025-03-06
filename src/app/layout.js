@@ -15,6 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Apex Development",
   description: "Девелопер нового поколения",
+  
 };
 
 export default function RootLayout({ children }) {

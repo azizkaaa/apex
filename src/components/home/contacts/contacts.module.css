@@ -45,13 +45,19 @@
 }
 
 .input {
-    padding: 13px 17px 13px 17px;
+    padding: 0px 17px 0px 17px;
     border: 1px solid #FF6A00;
     border-radius: 8px;
     width: 221px;
     background-color: #fff;
     color: black;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px;
 }
+
+
 
 .input:focus {
     border-color: #FF6A00; 
@@ -68,6 +74,7 @@
    
 }
 
+
 .button {
     background: #FF6A00;
     color: white;
@@ -78,7 +85,12 @@
     width: 221px;
     font-family: "Stapel5";
     font-size: 18px;
-    font-weight: 600
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.button:hover{
+    color: black;
 }
 
 .social{
@@ -155,7 +167,7 @@
 
     .input{
         width: 495px;
-        padding: 16px 17px 15px 27px;
+        padding: 5px 17px 5px 27px;
     }
     .button{
         width: 495px;
@@ -220,7 +232,7 @@
 
     .input{
         width: 495px;
-        padding: 16px 17px 15px 27px;
+        padding: 5px 17px 5px 27px;
     }
     .button{
         width: 495px;
@@ -291,7 +303,7 @@
 
     .input{
         width: 293px;
-        padding: 16px 17px 15px 17px;
+        padding: 5px 17px 5px 17px;
     }
     .button{
         width: 293px;
