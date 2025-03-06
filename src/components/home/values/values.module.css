@@ -135,8 +135,8 @@
 
 @media (max-width: 460px) {
     .stext_container {
-        width: 322px;
-        min-width: 322px;
+        width: 330px;
+        min-width: 330px;
         padding: 20px;
         margin: 40px auto 30px;
     }
