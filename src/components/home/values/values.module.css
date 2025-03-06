@@ -135,8 +135,8 @@
 
 @media (max-width: 460px) {
     .stext_container {
-        width: 360px;
-        min-width: 360px;
+        width: 322px;
+        min-width: 322px;
         padding: 20px;
         margin: 40px auto 30px;
     }
@@ -150,6 +150,10 @@
     .stext_container p {
         font-size: 15px;
         line-height: 130%;
+    }
+
+    .brr{
+        display: none;
     }
 }
 
