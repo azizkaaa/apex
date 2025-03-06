@@ -142,7 +142,7 @@ function Contacts() {
                 </a>
             </div>
 
-            <p className={styles.copyright}>© 2025 Apex Development. <br className={styles.brr}/> All rights reserved.</p>
+            <p className={styles.copyright}>© 2025 Apex Development. <br className={styles.hr}/> All rights reserved.</p>
         </section>
     );
 }

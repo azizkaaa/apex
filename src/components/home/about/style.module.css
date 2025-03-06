@@ -267,7 +267,7 @@
 }
 
 
-@media (max-width: 440px) {
+@media (max-width: 460px) {
 
    .about {
         height: auto;
@@ -275,6 +275,7 @@
         padding-bottom: 60px; 
     }
 
+    
     .aboutContent {
         width: 293px;
         padding-top: 80px;
@@ -328,13 +329,15 @@
         display: block;
     }
 
+    .brrr{
+        display:none;
+    }
+
 
 }
 
 
-@media (min-width: 2000px) {
 
-}
 
 @media (min-width: 2000px) {
 
@@ -438,5 +441,101 @@
     .aboutLetter {
         right: -400px;
     }
+
+}
+
+
+@media (min-width: 4480px){
+    .aboutContent {
+        max-width: 1895px;
+        margin-left: 470px;
+    }
+
+    .first {
+        font-size: 83px;
+        line-height: 101px;
+    }
+
+    .highlight {
+        font-size: 83px;
+        line-height: 101px;
+    }
+
+    .second {
+        margin-top: 94px;
+        font-size: 83px;
+        line-height: 101px;
+    }
+
+    .third {
+        margin-top: 52px;
+        font-size: 83px;
+        line-height: 101px;
+    }
+
+    .forth {
+        margin-top: 52px;
+        font-size: 83px;
+        line-height: 101px;
+    }
+
+    .aboutLetterDesktop {
+        display: none;
+    }
+
+    .aboutBig {
+        display: block;
+    }
+
+ 
+}
+
+@media (min-width: 5120px) {
+    .aboutContent {
+        max-width: 2167px; 
+        margin-left: 537px; 
+    }
+
+    .first {
+        font-size: 95px;
+        line-height: 115px; 
+    }
+
+    .highlight {
+        font-size: 95px;
+        line-height: 115px;
+    }
+
+    .second {
+        margin-top: 107px;
+        font-size: 95px;
+        line-height: 115px;
+    }
+
+    .third {
+        margin-top: 59px; 
+        font-size: 95px;
+        line-height: 115px;
+    }
+
+    .forth {
+        margin-top: 59px;
+        font-size: 95px;
+        line-height: 115px;
+    }
+
+    .aboutLetterDesktop {
+        display: none;
+    }
+
+    .aboutBig {
+        display: block;
+    }
+
+    .aboutLetter {
+        right: -533px; 
+    }
+
+
 
 }

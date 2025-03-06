@@ -131,7 +131,7 @@
 
 }
 
-@media (max-width: 440px) {
+@media (max-width: 460px) {
   .header {
     padding: 35px 30px;
     height: 69px;
@@ -197,3 +197,51 @@
   }
 
 }
+@media (min-width: 4480px) {
+  .navbar {
+    font-size: 56px;
+    line-height: 80px;
+  }
+
+  .logo {
+    width: 195px;
+    height: 133px;
+  }
+
+  .header {
+    padding: 187px 398px;
+  }
+
+  .head {
+    gap: 149px;
+  }
+
+  .nav {
+    gap: 149px;
+  }
+}
+
+
+@media (min-width: 5120px) {
+  .navbar {
+    font-size: 64px; 
+    line-height: 91px; 
+}
+
+.logo {
+    width: 223px; 
+    height: 152px; 
+}
+
+.header {
+    padding: 215px 530px; 
+}
+
+.head{
+    gap: 171px; 
+}
+
+.nav {
+    gap: 171px; 
+}
+};

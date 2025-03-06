@@ -104,7 +104,7 @@
 
    
    
-   @media (max-width: 440px) {
+   @media (max-width: 460px) {
    
    .logo {
     width: 140px;
@@ -136,3 +136,20 @@
    
    
    }
+
+   @media (min-width: 5120px) {
+   
+    .title{
+        margin-top: 553px;
+        font-size: 264px;
+        line-height: 263px;
+      }
+    
+      .logo {
+        margin-top: 410px;
+        width: 634px;
+        height: 191px;
+      }
+       
+       
+       }
