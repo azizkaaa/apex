@@ -13,6 +13,70 @@
     padding-bottom: 60px;
 }
 
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.50); 
+    backdrop-filter: blur(10px); 
+    z-index: 11000; 
+    display: none; 
+}
+
+.overlay.show {
+    display: block;
+}
+
+
+.alert {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 486.316px;
+    height: 236.923px;
+    background-color: #FF6A00;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    z-index: 12999; 
+    border-radius: 23.381px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.alert.show {
+    opacity: 1;
+}
+
+
+.zayavka{
+    margin-top: 20px;
+    color: #FFF;
+    font-family: "Stapel5";
+    font-size: 52.996px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 55px;
+    margin-bottom: 30px; 
+
+}
+.answer{
+    color: #FFF;
+    text-align: center;
+    font-family: "TT Interphases";
+    font-size: 20.263px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+}
+
 .logo {
     margin-top: 100px;
     width: 220px;
@@ -192,8 +256,30 @@
         font-size: 11px;
         line-height: 15px;
     }
+    .container {
+        min-height: 0vh
+        
+    }
+
+    .alert {
+        width: 336px;
+        height: 188px;
+        border-radius: 16px;
+    }
+    
+    
+    .zayavka{
+        font-size: 36.615px;
+        line-height: 38px;
+    
+    }
+    .answer{
+        font-size: 14px;
+    }
+    
 
  
+
 
 
 }
@@ -332,6 +418,25 @@
         padding-bottom: 40px;
     }
 
+    .alert {
+        width: 292px;
+        height: 142px;
+        border-radius: 14px;
+    }
+    
+    
+    .zayavka{
+        margin-top: 7px;
+        font-size: 31px;
+        line-height: 33px;
+        margin-bottom: 15px;
+    
+    }
+    .answer{
+        font-size: 12px;
+        
+    }
+
 }
 
 @media (min-width: 441px) {
@@ -417,6 +522,24 @@
 
     .container {
         padding-bottom: 152px;
+    }
+    .alert {
+        width: 1233px;
+        height: 601px;
+        border-radius: 59px;
+    }
+    
+    
+    .zayavka{
+        margin-top: 85px;
+        font-size: 134px;
+        line-height: 139px;
+        margin-bottom: 63px;
+    
+    }
+    .answer{
+        font-size: 51px;
+        
     }
     
        

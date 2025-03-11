@@ -6,7 +6,7 @@
   position: fixed;
   z-index: 10000;
   width: 100%;
-  height: 150px;
+  height: 91px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -182,7 +182,7 @@
 
   .header {
 
-    padding: 177px 398px;
+    padding: 140px 398px;
   }
 
   .head {
@@ -206,7 +206,8 @@
   }
 
   .header {
-    padding: 167px 398px;
+    padding: 140px 398px;
+    
   }
 
   .head {
@@ -231,7 +232,7 @@
 }
 
 .header {
-    padding: 200px 530px; 
+    padding: 170px 530px; 
 }
 
 .head{
