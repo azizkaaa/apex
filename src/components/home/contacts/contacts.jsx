@@ -50,21 +50,21 @@ function Contacts() {
         e.preventDefault();
 
         if (!name || !phone) {
-            setAlertTitle("Ошибка!");
+            setAlertTitle("Неверная попытка!");
             setAlertMessage("Пожалуйста, заполните все поля");
             setShowAlert(true);
             return;
         }
 
         if (name.length > 20) {
-            setAlertTitle("Ошибка!");
+            setAlertTitle("Неверная попытка!");
             setAlertMessage("Имя не должно превышать 20 символов");
             setShowAlert(true);
             return;
         }
 
         if (phone.length > 13) {
-            setAlertTitle("Ошибка!");
+            setAlertTitle("Неверная попытка!");
             setAlertMessage("Номер не должен превышать 13 символов");
             setShowAlert(true);
             return;
