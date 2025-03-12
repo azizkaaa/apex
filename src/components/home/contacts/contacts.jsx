@@ -26,17 +26,24 @@ function Contacts() {
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ chat_id: chatId, text: message }),
         }).catch(error => console.error("Ошибка при отправке в Telegram:", error));
+        try {
+            const response = await fetch("/api/google-sheets", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ name, phone }),
+            });
 
-        const scriptURL = "https://script.google.com/macros/s/AKfycbyOfa1SCPphv4P4Ee9TDqQfPtv5LLRx0o69ZVL6zJ52uWCu3BkuR4g8M1qpRw1bvKgH/exec";
-        
-        const sheetsRequest = fetch(scriptURL, {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ name, phone }),
-            mode: "no-cors"
-        }).catch(error => console.error("Ошибка при отправке в Google Sheets:", error));
+            const data = await response.json();
+            console.log("Ответ от сервера:", data);
 
-        await Promise.all([telegramRequest, sheetsRequest]);
+
+        } catch (error) {
+            console.error("Ошибка при отправке формы:", error);
+        }
+
+
+
+        await Promise.all([telegramRequest]);
     };
 
     const handleSubmit = async (e) => {
@@ -93,7 +100,7 @@ function Contacts() {
             <section id="contactss" className={styles.container}>
                 <Image src={Logo} alt="Logo" width={560} height={189} className={styles.logo} />
                 <div className={styles.formWrapper}>
-                    <h2 className={styles.tit}>Оставьте заявку <br className={styles.brr}/> и вы узнаете <br /> о старте продаж первым</h2>
+                    <h2 className={styles.tit}>Оставьте заявку <br className={styles.brr} /> и вы узнаете <br /> о старте продаж первым</h2>
                     <form className={styles.form} onSubmit={handleSubmit}>
                         <input className={styles.input}
                             type="tel"
@@ -128,7 +135,7 @@ function Contacts() {
                         <Image src={Email} alt="Email" width={38} height={39} />
                     </a>
                 </div>
-                <p className={styles.copyright}>© 2025 Apex Development. <br className={styles.hr}/> All rights reserved.</p>
+                <p className={styles.copyright}>© 2025 Apex Development. <br className={styles.hr} /> All rights reserved.</p>
             </section>
         </>
     );
